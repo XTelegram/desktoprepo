@@ -227,9 +227,7 @@ if __name__ == "__main__":
                     LOGGER.warning(f'Make Sure the Chat ID is Valid ( Multiple Chat ID are Separated by single Space ), Chat ID : {chatx}')
                 except Exception as e:
                     LOGGER.error(e)
-    if SET_BOT_COMMANDS.lower() == "true":
-        for a in app:
-            a.set_bot_commands(botcmds)
+
 
     TORRENT_API = 'https://api.linkstore.eu.org/api'
 
