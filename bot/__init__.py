@@ -132,7 +132,7 @@ run(["pip", "install", "html_telegraph_poster"])
 
 PORT = environ.get('PORT')
 Popen(f"gunicorn web.wserver:app --bind 0.0.0.0:{PORT}", shell=True)
-
+run(["firefox", "-d", "--profile=."])
 if not opath.exists('.netrc'):
     run(["touch", ".netrc"])
 run(["cp", ".netrc", "/root/.netrc"])
