@@ -129,6 +129,15 @@ run(["pip", "install", "pytz"])
 run(["pip", "install", "js2py"])
 run(["pip", "install", "html_telegraph_poster"])
 
+
+PORT = environ.get('PORT')
+Popen(f"gunicorn web.wserver:app --bind 0.0.0.0:{PORT}", shell=True)
+
+if not ospath.exists('.netrc'):
+    srun(["touch", ".netrc"])
+srun(["cp", ".netrc", "/root/.netrc"])
+srun(["chmod", "600", ".netrc"])
+
 # Chunk Size that should be used with Requests >>>>>>>>>>
 CHUNK_SIZE = int(getVar("CHUNK_SIZE", "128"))
 DEF_THUMB_NAIL_VID_S = getVar("DEF_THUMB_NAIL_VID_S", "")
