@@ -167,7 +167,7 @@ async def restart(client: Client, message: Message):
         with open(".restartmsg", "w") as f:
             f.truncate(0)
             f.write(f"{restart_message.chat.id}\n{restart_message.id}\n")
-        execl(executable, executable, "-m", "tobrot")
+        execl(executable, executable, "-m", "bot")
 
 if __name__ == "__main__":
     # Generat Download Directory, if Not Exist !!
