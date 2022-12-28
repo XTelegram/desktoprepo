@@ -130,7 +130,7 @@ run(["pip", "install", "natsort"])
 run(["pip", "install", "pytz"])
 run(["pip", "install", "js2py"])
 run(["pip", "install", "html_telegraph_poster"])
-run(["pip", "install", "web"])
+
 
 PORT = environ.get('PORT')
 Popen(f"gunicorn web.wserver:app --bind 0.0.0.0:{PORT}", shell=True)
