@@ -12,7 +12,7 @@ from itertools import count
 from time import time
 from requests import get as rget
 from os import environ, path as opath
-from subprocess import run
+from subprocess import Popen, run, check_output
 from threading import Lock as ThreadLock
 from asyncio import Lock
 from urllib.request import urlretrieve
@@ -121,9 +121,9 @@ for imp in ["TG_BOT_TOKEN1", "APP_ID1", "API_HASH1", "OWNER_ID", "AUTH_CHANNEL"]
 # Telegram Max File Upload Size >>>>>>>>>>
 TG_MAX_FILE_SIZE = 2097152000
 TG_PRM_FILE_SIZE = 4194304000
-srun(["wget", "https://rclone.org/install.sh"])
-srun(["bash", "install.sh"])
-srun(["pip", "install", "hachoir"])
+run(["wget", "https://rclone.org/install.sh"])
+run(["bash", "install.sh"])
+run(["pip", "install", "hachoir"])
 
 # Chunk Size that should be used with Requests >>>>>>>>>>
 CHUNK_SIZE = int(getVar("CHUNK_SIZE", "128"))
