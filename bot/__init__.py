@@ -123,6 +123,9 @@ TG_MAX_FILE_SIZE = 2097152000
 TG_PRM_FILE_SIZE = 4194304000
 
 run(["pip", "install", "hachoir"])
+run(["pip", "install", "hurry.filesize"])
+run(["pip", "install", "natsort"])
+run(["pip", "install", "pytz"])
 
 # Chunk Size that should be used with Requests >>>>>>>>>>
 CHUNK_SIZE = int(getVar("CHUNK_SIZE", "128"))
