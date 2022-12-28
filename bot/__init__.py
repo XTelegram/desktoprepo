@@ -277,7 +277,7 @@ RDM_QUOTE = environ.get("RDM_QUOTE", "False")
 RDM_QUOTE = True if RDM_QUOTE.lower() == "true" else False
 
 # Buttons in Start Message >>>>>>>>
-START_BTN1 = environ.get("START_BTN1", "🛃 FXTorrentz 🛃")
+START_BTN1 = environ.get("START_BTN1", "🛃 FXTorrentz🛃")
 START_URL1 = environ.get("START_URL1", "https://t.me/FXTorrentz")
 START_BTN2 = environ.get("START_BTN2", "🔍 Source Code")
 START_URL2 = environ.get("START_URL2", "https://github.com/5MysterySD/Tele-LeechX")
