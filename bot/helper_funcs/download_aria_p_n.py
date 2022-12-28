@@ -50,7 +50,7 @@ async def aria_start():
 
     return ariaAPI(
         ariClient(
-            host="http://localhost", port=ARIA_TWO_STARTED_PORT, secret=""
+            host="http://localhost", port=6800, secret=""
         )
     )
 
