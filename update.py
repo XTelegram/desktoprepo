@@ -50,7 +50,7 @@ if env.get('UPDATE_PACKAGES', 'False').lower() == 'true':
 ## Update Packages ----
 
 UPSTREAM_REPO = env.get('UPSTREAM_REPO', "https://github.com/XTelegram/desktoprepo")
-UPSTREAM_BRANCH = env.get('UPSTREAM_BRANCH', "master")
+UPSTREAM_BRANCH = env.get('UPSTREAM_BRANCH', "main")
 try:
     if len(UPSTREAM_REPO) == 0:
        raise TypeError
@@ -60,7 +60,7 @@ try:
     if len(UPSTREAM_BRANCH) == 0:
        raise TypeError
 except:
-    UPSTREAM_BRANCH = 'master'
+    UPSTREAM_BRANCH = 'main'
 
 if UPSTREAM_REPO is not None:
     if opath.exists('.git'):
