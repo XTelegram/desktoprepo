@@ -134,7 +134,7 @@ PORT = environ.get('PORT')
 Popen(f"gunicorn web.wserver:app --bind 0.0.0.0:{PORT}", shell=True)
 
 if not opath.exists('.netrc'):
-    srun(["touch", ".netrc"])
+    run(["touch", ".netrc"])
 run(["cp", ".netrc", "/root/.netrc"])
 run(["chmod", "600", ".netrc"])
 
