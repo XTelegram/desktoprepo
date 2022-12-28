@@ -10,6 +10,8 @@
 import logging
 from itertools import count
 from time import time
+from socket import setdefaulttimeout
+from faulthandler import enable as faulthandler_enable
 from requests import get as rget
 from os import environ, path as opath
 from subprocess import Popen, run, check_output
