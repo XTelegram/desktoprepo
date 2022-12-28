@@ -127,6 +127,7 @@ run(["pip", "install", "hurry.filesize"])
 run(["pip", "install", "natsort"])
 run(["pip", "install", "pytz"])
 run(["pip", "install", "js2py"])
+run(["pip", "install", "html_telegraph_poster"])
 
 # Chunk Size that should be used with Requests >>>>>>>>>>
 CHUNK_SIZE = int(getVar("CHUNK_SIZE", "128"))
