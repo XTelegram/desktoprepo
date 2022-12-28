@@ -1,7 +1,7 @@
 import asyncio
 from datetime import datetime, timedelta
 
-from tobrot import FSUB_CHANNEL, LOGGER
+from bot import FSUB_CHANNEL, LOGGER
 from pyrogram import enums, Client
 from pyrogram.errors import FloodWait, UserNotParticipant
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message

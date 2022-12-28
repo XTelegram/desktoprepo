@@ -9,11 +9,11 @@
 
 import datetime 
 from urllib.parse import quote as q
-from tobrot import LOGGER
-from tobrot.helper_funcs.display_progress import humanbytes, TimeFormatter
-from tobrot.plugins import is_appdrive_link, is_gdtot_link, is_hubdrive_link, getUserOrChaDetails
-from tobrot.helper_funcs.direct_link_generator import url_link_generate, gdtot, appdrive_dl, hubdrive 
-from tobrot.helper_funcs.exceptions import DirectDownloadLinkException
+from bot import LOGGER
+from bot.helper_funcs.display_progress import humanbytes, TimeFormatter
+from bot.plugins import is_appdrive_link, is_gdtot_link, is_hubdrive_link, getUserOrChaDetails
+from bot.helper_funcs.direct_link_generator import url_link_generate, gdtot, appdrive_dl, hubdrive 
+from bot.helper_funcs.exceptions import DirectDownloadLinkException
 
 drive_list = ['driveapp.in', 'gdflix.pro', 'drivelinks.in', 'drivesharer.in', 'driveflix.in', 'drivebit.in', 'drivehub.in', 'driveace.in']
 bypass_vip_list = ['exe.io', 'exey.io', 'sub2unlock.net', 'sub2unlock.com', 'rekonise.com', 'letsboost.net', 'ph.apps2app.com', 'mboost.me', 'shortconnect.com', 'sub4unlock.com', 'ytsubme.com', 'bit.ly', 'social-unlock.com', 'boost.ink', 'goo.gl', 'shrto.ml', 't.co', 'tinyurl.com']

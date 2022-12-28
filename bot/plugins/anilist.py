@@ -16,8 +16,8 @@ from urllib.parse import quote as q
 from pyrogram import enums
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 
-from tobrot import LOGGER, ANILIST_TEMPLATE, DEF_ANILIST_TEMPLATE
-from tobrot.helper_funcs.display_progress import TimeFormatter
+from bot import LOGGER, ANILIST_TEMPLATE, DEF_ANILIST_TEMPLATE
+from bot.helper_funcs.display_progress import TimeFormatter
 GENRES_EMOJI = {"Action": "👊", "Adventure": choice(['🪂', '🧗‍♀']), "Comedy": "🤣", "Drama": " 🎭", "Ecchi": choice(['💋', '🥵']), "Fantasy": choice(['🧞', '🧞‍♂', '🧞‍♀','🌗']), "Hentai": "🔞", "Horror": "☠", "Mahou Shoujo": "☯", "Mecha": "🤖", "Music": "🎸", "Mystery": "🔮", "Psychological": "♟", "Romance": "💞", "Sci-Fi": "🛸", "Slice of Life": choice(['☘','🍁']), "Sports": "⚽️", "Supernatural": "🫧", "Thriller": choice(['🥶', '🔪','🤯'])}
 
 ANIME_GRAPHQL_QUERY = """

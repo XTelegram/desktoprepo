@@ -14,13 +14,13 @@ from shutil import rmtree
 from pyrogram import enums
 from pyrogram.types import CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton 
 
-from tobrot import *
-from tobrot.helper_funcs.bot_commands import BotCommands
-from tobrot.helper_funcs.admin_check import AdminCheck
-from tobrot.helper_funcs.download_aria_p_n import aria_start
-from tobrot.helper_funcs.youtube_dl_button import youtube_dl_call_back
-from tobrot.plugins.choose_rclone_config import rclone_button_callback 
-from tobrot.plugins.status_message_fn import bot_button_stats
+from bot import *
+from bot.helper_funcs.bot_commands import BotCommands
+from bot.helper_funcs.admin_check import AdminCheck
+from bot.helper_funcs.download_aria_p_n import aria_start
+from bot.helper_funcs.youtube_dl_button import youtube_dl_call_back
+from bot.plugins.choose_rclone_config import rclone_button_callback 
+from bot.plugins.status_message_fn import bot_button_stats
 
 async def button(bot, update: CallbackQuery):
     cb_data = update.data

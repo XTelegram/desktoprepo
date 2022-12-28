@@ -13,10 +13,10 @@ import os
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
 from PIL import Image
-from tobrot import DOWNLOAD_LOCATION, DB_URI, LOGGER
-from tobrot.database.db_func import DatabaseManager
-from tobrot.bot_theme.themes import BotTheme
-from tobrot.plugins import getUserOrChaDetails
+from bot import DOWNLOAD_LOCATION, DB_URI, LOGGER
+from bot.database.db_func import DatabaseManager
+from bot.bot_theme.themes import BotTheme
+from bot.plugins import getUserOrChaDetails
 
 async def save_thumb_nail(client, message):
     uid, _ = getUserOrChaDetails(message)

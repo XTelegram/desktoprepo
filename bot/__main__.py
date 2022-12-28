@@ -23,38 +23,38 @@ from pyrogram.handlers import CallbackQueryHandler, MessageHandler
 from sys import executable
 from subprocess import run as srun
 
-from tobrot import HEROKU_API_KEY, HEROKU_APP_NAME, app, __version__
-from tobrot import OWNER_ID, SUDO_USERS, AUTH_CHANNEL, DOWNLOAD_LOCATION, GET_SIZE_G, GLEECH_COMMAND, \
+from bot import HEROKU_API_KEY, HEROKU_APP_NAME, app, __version__
+from bot import OWNER_ID, SUDO_USERS, AUTH_CHANNEL, DOWNLOAD_LOCATION, GET_SIZE_G, GLEECH_COMMAND, \
                    GLEECH_UNZIP_COMMAND, GLEECH_ZIP_COMMAND, LOGGER, RENEWME_COMMAND, TELEGRAM_LEECH_UNZIP_COMMAND, \
                    TELEGRAM_LEECH_COMMAND, UPLOAD_COMMAND, GYTDL_COMMAND, GPYTDL_COMMAND, RCLONE_COMMAND, \
                    UPDATES_CHANNEL, LEECH_LOG, STRING_SESSION, SET_BOT_COMMANDS, RDM_QUOTE, INDEX_SCRAPE, TIMEZONE, \
                    AUTO_LEECH, PICS_LIST, PIXABAY_API_KEY, PIXABAY_CATEGORY, PIXABAY_SEARCH, START_BTN1, START_URL1, \
                    START_BTN2, START_URL2
 if STRING_SESSION:
-    from tobrot import userBot
-from tobrot.helper_funcs.download import down_load_media_f
-from tobrot.helper_funcs.download_aria_p_n import aria_start
-from tobrot.plugins import *
-from tobrot.plugins.anilist import get_anime_query, anilist_callbackquery
-from tobrot.plugins.index_scrape import index_scrape
-from tobrot.plugins.call_back_button_handler import button
-from tobrot.plugins.imdb import imdb_search, imdb_callback
-from tobrot.plugins.torrent_search import searchhelp, nyaa_callback, nyaa_nop, nyaa_search, nyaa_search_sukebei, TorrentSearch, \
+    from bot import userBot
+from bot.helper_funcs.download import down_load_media_f
+from bot.helper_funcs.download_aria_p_n import aria_start
+from bot.plugins import *
+from bot.plugins.anilist import get_anime_query, anilist_callbackquery
+from bot.plugins.index_scrape import index_scrape
+from bot.plugins.call_back_button_handler import button
+from bot.plugins.imdb import imdb_search, imdb_callback
+from bot.plugins.torrent_search import searchhelp, nyaa_callback, nyaa_nop, nyaa_search, nyaa_search_sukebei, TorrentSearch, \
                                           RESULT_STR_1337, RESULT_STR_PIRATEBAY, RESULT_STR_TGX, RESULT_STR_YTS, RESULT_STR_EZTV, \
                                           RESULT_STR_TORLOCK, RESULT_STR_RARBG, RESULT_STR_ALL
-from tobrot.plugins.custom_utils import prefix_set, caption_set, template_set, theme_set, anilist_set, user_log_set, log_chat_id
-from tobrot.plugins.url_parser import url_parser
-from tobrot.helper_funcs.bot_commands import BotCommands
-from tobrot.database.db_func import DatabaseManager
-from tobrot.plugins.choose_rclone_config import rclone_command_f
-from tobrot.plugins.custom_thumbnail import clear_thumb_nail, save_thumb_nail
-from tobrot.plugins.incoming_message_fn import g_clonee, g_yt_playlist, incoming_message_f, incoming_purge_message_f, \
+from bot.plugins.custom_utils import prefix_set, caption_set, template_set, theme_set, anilist_set, user_log_set, log_chat_id
+from bot.plugins.url_parser import url_parser
+from bot.helper_funcs.bot_commands import BotCommands
+from bot.database.db_func import DatabaseManager
+from bot.plugins.choose_rclone_config import rclone_command_f
+from bot.plugins.custom_thumbnail import clear_thumb_nail, save_thumb_nail
+from bot.plugins.incoming_message_fn import g_clonee, g_yt_playlist, incoming_message_f, incoming_purge_message_f, \
                                                incoming_youtube_dl_f, rename_tg_file, auto_callback
-from tobrot.plugins.help_func import help_message_f, stats, user_settings, settings_callback, picture_add, pictures, pics_callback
-from tobrot.plugins.speedtest import get_speed
-from tobrot.plugins.mediainfo import mediainfo
-from tobrot.plugins.rclone_size import check_size_g, g_clearme
-from tobrot.plugins.status_message_fn import cancel_message_f, eval_message_f, exec_message_f, status_message_f, \
+from bot.plugins.help_func import help_message_f, stats, user_settings, settings_callback, picture_add, pictures, pics_callback
+from bot.plugins.speedtest import get_speed
+from bot.plugins.mediainfo import mediainfo
+from bot.plugins.rclone_size import check_size_g, g_clearme
+from bot.plugins.status_message_fn import cancel_message_f, eval_message_f, exec_message_f, status_message_f, \
                                              upload_document_f, upload_log_file, upload_as_doc, upload_as_video
 
 botcmds = [

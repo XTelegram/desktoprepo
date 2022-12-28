@@ -1,4 +1,4 @@
-from tobrot import *
+from bot import *
 
 class _BotCommands:
     def __init__(self):

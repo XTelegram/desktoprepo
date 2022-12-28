@@ -23,16 +23,16 @@ from psutil import virtual_memory, cpu_percent, net_io_counters
 from pyrogram.errors import FloodWait, MessageIdInvalid, MessageNotModified
 from pyrogram import enums, Client
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, InputMediaPhoto, Message
-from tobrot.plugins import getUserOrChaDetails, getUserName, progressBar
-from tobrot.helper_funcs.admin_check import AdminCheck
-from tobrot import AUTH_CHANNEL, BOT_START_TIME, LOGGER, MAX_MESSAGE_LENGTH, user_specific_config, \
+from bot.plugins import getUserOrChaDetails, getUserName, progressBar
+from bot.helper_funcs.admin_check import AdminCheck
+from bot import AUTH_CHANNEL, BOT_START_TIME, LOGGER, MAX_MESSAGE_LENGTH, user_specific_config, \
                    gid_dict, _lock, EDIT_SLEEP_TIME_OUT, FINISHED_PROGRESS_STR, UN_FINISHED_PROGRESS_STR, \
                    UPDATES_CHANNEL, LOG_FILE_NAME, DB_URI, user_settings, HALF_FINISHED, PICS_LIST
-from tobrot.helper_funcs.display_progress import humanbytes, TimeFormatter
-from tobrot.helper_funcs.download_aria_p_n import aria_start
-from tobrot.helper_funcs.upload_to_tg import upload_to_tg
-from tobrot.database.db_func import DatabaseManager
-from tobrot.bot_theme.themes import BotTheme
+from bot.helper_funcs.display_progress import humanbytes, TimeFormatter
+from bot.helper_funcs.download_aria_p_n import aria_start
+from bot.helper_funcs.upload_to_tg import upload_to_tg
+from bot.database.db_func import DatabaseManager
+from bot.bot_theme.themes import BotTheme
 
 async def upload_as_doc(client, message):
     uid, u_tag = getUserOrChaDetails(message)

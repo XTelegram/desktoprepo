@@ -13,12 +13,12 @@ from time import time
 from pathlib import Path
 from pyrogram import enums
 
-from tobrot import DOWNLOAD_LOCATION, LOGGER, TELEGRAM_LEECH_UNZIP_COMMAND
-from tobrot.helper_funcs.create_compressed_archive import unzip_me, get_base_name
-from tobrot.helper_funcs.display_progress import Progress, TimeFormatter, humanbytes
-from tobrot.helper_funcs.upload_to_tg import upload_to_gdrive
-from tobrot.plugins import getDetails, getUserOrChaDetails
-from tobrot.bot_theme.themes import BotTheme
+from bot import DOWNLOAD_LOCATION, LOGGER, TELEGRAM_LEECH_UNZIP_COMMAND
+from bot.helper_funcs.create_compressed_archive import unzip_me, get_base_name
+from bot.helper_funcs.display_progress import Progress, TimeFormatter, humanbytes
+from bot.helper_funcs.upload_to_tg import upload_to_gdrive
+from bot.plugins import getDetails, getUserOrChaDetails
+from bot.bot_theme.themes import BotTheme
 
 async def down_load_media_f(client, message):
     user_command = message.command[0]

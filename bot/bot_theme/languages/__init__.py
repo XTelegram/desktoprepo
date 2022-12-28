@@ -1,5 +1,5 @@
-from tobrot import LOGGER
-from tobrot.bot_theme.languages import en, bn
+from bot import LOGGER
+from bot.bot_theme.languages import en, bn
 
 AVAILABLE_LANG = {'english': en, 'bengali': bn}
 BOT_LANG = "English"

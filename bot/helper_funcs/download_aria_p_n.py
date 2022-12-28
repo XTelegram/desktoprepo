@@ -19,19 +19,19 @@ from natsort import natsorted
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton 
 from pyrogram.errors import FloodWait, MessageNotModified
 
-from tobrot import ARIA_TWO_STARTED_PORT, CUSTOM_PREFIX, CUSTOM_SUFFIX, EDIT_SLEEP_TIME_OUT, LOGGER, UPDATES_CHANNEL, \
+from bot import ARIA_TWO_STARTED_PORT, CUSTOM_PREFIX, CUSTOM_SUFFIX, EDIT_SLEEP_TIME_OUT, LOGGER, UPDATES_CHANNEL, \
                    MAX_TIME_TO_WAIT_FOR_TORRENTS_TO_START, CLONE_COMMAND_G, user_settings_lock, user_settings, LEECH_LOG, \
                    BOT_PM, LEECH_INVITE, EXCEP_CHATS
-from tobrot.helper_funcs.create_compressed_archive import create_archive, get_base_name, unzip_me
-from tobrot.helper_funcs.upload_to_tg import upload_to_gdrive, upload_to_tg
-from tobrot.helper_funcs.download import download_tg
-from tobrot.bot_theme.themes import BotTheme
-from tobrot.helper_funcs.direct_link_generator import url_link_generate
-from tobrot.helper_funcs.exceptions import DirectDownloadLinkException
-from tobrot.plugins import getUserOrChaDetails
-from tobrot.plugins.custom_utils import *
-from tobrot.plugins import is_appdrive_link, is_gdtot_link, is_hubdrive_link 
-from tobrot.helper_funcs.display_progress import TimeFormatter
+from bot.helper_funcs.create_compressed_archive import create_archive, get_base_name, unzip_me
+from bot.helper_funcs.upload_to_tg import upload_to_gdrive, upload_to_tg
+from bot.helper_funcs.download import download_tg
+from bot.bot_theme.themes import BotTheme
+from bot.helper_funcs.direct_link_generator import url_link_generate
+from bot.helper_funcs.exceptions import DirectDownloadLinkException
+from bot.plugins import getUserOrChaDetails
+from bot.plugins.custom_utils import *
+from bot.plugins import is_appdrive_link, is_gdtot_link, is_hubdrive_link 
+from bot.helper_funcs.display_progress import TimeFormatter
 
 sys.setrecursionlimit(10 ** 4)
 

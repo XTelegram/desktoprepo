@@ -1,7 +1,7 @@
 from random import choice
 
-from tobrot import BOT_THEME, USER_THEMES, LOGGER
-from tobrot.bot_theme.themes import fx_optimised, fx_minimal
+from bot import BOT_THEME, USER_THEMES, LOGGER
+from bot.bot_theme.themes import fx_optimised, fx_minimal
 
 AVAILABLE_THEMES = {'fx-optimised-theme': fx_optimised, 'fx-minimal-theme': fx_minimal}
 

@@ -11,7 +11,7 @@ import asyncio
 import os
 import time
 
-from tobrot import DOWNLOAD_LOCATION
+from bot import DOWNLOAD_LOCATION
 
 
 async def request_download(url, file_name, r_user_id):

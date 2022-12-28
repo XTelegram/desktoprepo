@@ -6,11 +6,11 @@ from urllib.parse import quote as q
 from asyncio import sleep as asleep
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from tobrot import LOGGER, UPDATES_CHANNEL
-from tobrot.helper_funcs.display_progress import humanbytes_int
-from tobrot.plugins import getUserOrChaDetails
-from tobrot.plugins.mediainfo import post_to_telegraph
-from tobrot.bot_theme.themes import BotTheme
+from bot import LOGGER, UPDATES_CHANNEL
+from bot.helper_funcs.display_progress import humanbytes_int
+from bot.plugins import getUserOrChaDetails
+from bot.plugins.mediainfo import post_to_telegraph
+from bot.bot_theme.themes import BotTheme
 
 nexPage = False
 nexPageToken = "" 

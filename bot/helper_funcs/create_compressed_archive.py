@@ -11,7 +11,7 @@ import asyncio
 import os
 import shutil
 
-from tobrot import LOGGER
+from bot import LOGGER
 
 
 async def create_archive(input_directory):

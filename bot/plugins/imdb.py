@@ -11,11 +11,11 @@ from re import findall, IGNORECASE
 from imdb import IMDb
 from pycountry import countries as conn
 
-from tobrot import LOGGER
-from tobrot import app, MAX_LIST_ELM, DEF_IMDB_TEMPLATE,  LOGGER
-from tobrot.plugins import getUserOrChaDetails
-from tobrot.plugins.custom_utils import *
-from tobrot.helper_funcs.display_progress import TimeFormatter
+from bot import LOGGER
+from bot import app, MAX_LIST_ELM, DEF_IMDB_TEMPLATE,  LOGGER
+from bot.plugins import getUserOrChaDetails
+from bot.plugins.custom_utils import *
+from bot.helper_funcs.display_progress import TimeFormatter
 
 from pyrogram import filters, enums
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery 

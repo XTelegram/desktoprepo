@@ -4,8 +4,8 @@ from shutil import rmtree
 from re import match as rmatch
 from urllib.parse import unquote, quote
 
-from tobrot import DOWNLOAD_LOCATION, LOGGER, app, AUTO_LEECH
-from tobrot.helper_funcs.display_progress import humanbytes
+from bot import DOWNLOAD_LOCATION, LOGGER, app, AUTO_LEECH
+from bot.helper_funcs.display_progress import humanbytes
 from typing import Tuple
 
 async def getUserName():

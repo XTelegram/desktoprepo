@@ -17,22 +17,22 @@ from urllib.parse import unquote, quote
 from pyrogram import enums, Client
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message, CallbackQuery
 
-from tobrot import DOWNLOAD_LOCATION, CLONE_COMMAND_G, GLEECH_COMMAND, GLEECH_UNZIP_COMMAND, GLEECH_ZIP_COMMAND, \
+from bot import DOWNLOAD_LOCATION, CLONE_COMMAND_G, GLEECH_COMMAND, GLEECH_UNZIP_COMMAND, GLEECH_ZIP_COMMAND, \
                    LOGGER, GPYTDL_COMMAND, STATUS_COMMAND, UPDATES_CHANNEL, LEECH_LOG, BOT_PM, EXCEP_CHATS, app, \
                    FSUB_CHANNEL, USER_DTS, AUTO_LEECH, RCLONE_CONF_URL, EDIT_SLEEP_TIME_OUT, AUTO_USERS
-from tobrot.helper_funcs.display_progress import humanbytes, TimeFormatter
-from tobrot.helper_funcs.bot_commands import BotCommands
-from tobrot.helper_funcs.admin_check import AdminCheck
-from tobrot.helper_funcs.cloneHelper import CloneHelper
-from tobrot.helper_funcs.download import download_tg
-from tobrot.helper_funcs.download_aria_p_n import aria_start, call_apropriate_function, __sendSpecificLogMsg
-from tobrot.helper_funcs.extract_link_from_message import extract_link
-from tobrot.helper_funcs.upload_to_tg import upload_to_tg
-from tobrot.helper_funcs.youtube_dl_extractor import extract_youtube_dl_formats
-from tobrot.helper_funcs.ytplaylist import yt_playlist_downg
-from tobrot.plugins import getDetails, getUserOrChaDetails, getUserName
-from tobrot.plugins.force_sub_handler import handle_force_sub
-from tobrot.bot_theme.themes import BotTheme
+from bot.helper_funcs.display_progress import humanbytes, TimeFormatter
+from bot.helper_funcs.bot_commands import BotCommands
+from bot.helper_funcs.admin_check import AdminCheck
+from bot.helper_funcs.cloneHelper import CloneHelper
+from bot.helper_funcs.download import download_tg
+from bot.helper_funcs.download_aria_p_n import aria_start, call_apropriate_function, __sendSpecificLogMsg
+from bot.helper_funcs.extract_link_from_message import extract_link
+from bot.helper_funcs.upload_to_tg import upload_to_tg
+from bot.helper_funcs.youtube_dl_extractor import extract_youtube_dl_formats
+from bot.helper_funcs.ytplaylist import yt_playlist_downg
+from bot.plugins import getDetails, getUserOrChaDetails, getUserName
+from bot.plugins.force_sub_handler import handle_force_sub
+from bot.bot_theme.themes import BotTheme
 
 async def incoming_purge_message_f(client: Client, message: Message):
     msg = await message.reply_text("Purging...", quote=True)

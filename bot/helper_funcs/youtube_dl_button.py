@@ -11,8 +11,8 @@ import asyncio
 import json
 import os
 import shutil
-from tobrot import DOWNLOAD_LOCATION, LOGGER, GYTDL_COMMAND
-from tobrot.helper_funcs.upload_to_tg import upload_to_gdrive, upload_to_tg
+from bot import DOWNLOAD_LOCATION, LOGGER, GYTDL_COMMAND
+from bot.helper_funcs.upload_to_tg import upload_to_gdrive, upload_to_tg
 
 
 async def youtube_dl_call_back(bot, update):

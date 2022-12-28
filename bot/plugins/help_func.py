@@ -16,11 +16,11 @@ from psutil import disk_usage, cpu_percent, swap_memory, cpu_count, virtual_memo
 from pyrogram import enums, Client
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, InputMediaPhoto, Message
 
-from tobrot import *
-from tobrot.helper_funcs.display_progress import humanbytes, TimeFormatter
-from tobrot.bot_theme.themes import BotTheme
-from tobrot.helper_funcs.bot_commands import BotCommands
-from tobrot.plugins import getUserOrChaDetails, progressBar
+from bot import *
+from bot.helper_funcs.display_progress import humanbytes, TimeFormatter
+from bot.bot_theme.themes import BotTheme
+from bot.helper_funcs.bot_commands import BotCommands
+from bot.plugins import getUserOrChaDetails, progressBar
 
 TGH_LIMIT = 5242880*2
 

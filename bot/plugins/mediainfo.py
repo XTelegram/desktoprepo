@@ -18,10 +18,10 @@ from telegraph import Telegraph
 from pyrogram import enums
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from tobrot import UPDATES_CHANNEL, TGH_AUTHOR, TGH_AUTHOR_URL, LOGGER
-from tobrot.plugins import runcmd, getUserOrChaDetails
-from tobrot.helper_funcs.display_progress import humanbytes
-from tobrot.bot_theme.themes import BotTheme
+from bot import UPDATES_CHANNEL, TGH_AUTHOR, TGH_AUTHOR_URL, LOGGER
+from bot.plugins import runcmd, getUserOrChaDetails
+from bot.helper_funcs.display_progress import humanbytes
+from bot.bot_theme.themes import BotTheme
 
 def post_to_telegraph_html(a_title: str, content: str) -> str:
     """ Create a Telegram Post using HTML Content """
